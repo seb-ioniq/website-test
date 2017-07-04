@@ -1,0 +1,162 @@
+﻿@import "_ioniq-mixins.scss";
+@import "_flex.scss";
+@import "_theme.scss";
+
+html {
+    @include font-size-base()
+}
+
+body {
+    @include font-size();
+    font-family: $main-font;
+}
+
+html, body {
+    height: 100%;
+    background-color: $background-color;
+    color: $foreground-color;
+}
+
+.tio-navbar {
+    position: fixed;
+    width: 100%;
+    padding: 25px;
+
+    ul {
+        display: inline-block;
+        float: right;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            a, a:hover, a:active, a:visited, a:focus {
+                text-decoration: none;
+            }
+
+            a {
+                color: rgba($foreground-color, .5);
+                padding: 0 15px;
+                text-transform: uppercase;
+                @include transition();
+
+                &:hover {
+                    color: $foreground-color;
+                }
+
+                &#homeBtn {
+                    &.active {
+                        color: $my-blue;
+                    }
+                }
+
+                &#aboutBtn {
+                    &.active {
+                        color: $my-green;
+                    }
+                }
+
+                &#projectsBtn {
+                    &.active {
+                        color: $my-purple;
+                    }
+                }
+
+                &#contactBtn {
+                    &.active {
+                        color: $my-red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+span{
+    &.green{
+        color: $my-green;
+    }
+
+    &.blue{
+        color: $my-blue;
+    }
+
+    &.red{
+        color: $my-red;
+    }
+
+    &.purple{
+        color: $my-purple;
+    }
+}
+
+section {
+    &.container-fluid {
+        min-height: 100%;
+        min-height: 100vh;
+        padding: 25px;
+
+        &:nth-child(even) {
+            background-color: darken($background-color, 2);
+        }
+
+        h1 {
+            @include font-size(72);
+            font-family: $header-font;
+        }
+
+        &#home {
+            h1 {
+                @include font-size(110);
+                margin: 10px 0;
+            }
+
+            .welcome {
+                text-align: center;
+                text-transform: uppercase;
+
+                span {
+                    @include font-size(24);
+                    font-weight: 300;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                .social {
+                    @include font-size(24);
+
+                    a {
+                        color: $background-color;
+                        margin: 15px 10px;
+                        display: inline-block;
+                        padding: 5px 12px;
+                        border: 2px solid $my-blue;
+                        border-radius: 50%;
+                        background: $my-blue;
+                    }
+                }
+            }
+        }
+
+        &#about {
+            h1 {
+                color: $my-green;
+            }
+        }
+
+        &#projects {
+            h1 {
+                color: $my-purple;
+            }
+        }
+
+        &#contact {
+            h1 {
+                color: $my-red;
+            }
+        }
+    }
+}

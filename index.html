@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Personal Website of Sebastien Tittley (Software Developer) - TITTLEY.io</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="tio-navbar flex flex-row flex-center-y">
+        <div class="navbar-header">
+            <a href="#home"><img src="images/tittley-logo-light.svg" alt="TITTLEY.io Logo"/></a>
+        </div>
+        <ul class="flex-right">
+            <li><a href="#home" id="homeBtn" title="go to home section" class="active">Home</a></li>
+            <li><a href="#about" id="aboutBtn" title="go to about section">About</a></li>
+            <li><a href="#projects" id="projectsBtn" title="go to projects section">Projects</a></li>
+            <li><a href="#contact" id="contactBtn" title="go to contact section">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container-fluid flex middle" id="home">
+        <div class="welcome">
+            <span>Hi there! My name is</span>
+            <h1>
+                Sebastien Tittley
+            </h1>
+            <span>I'm a passionate <span class="purple">video game</span> & <span class="blue">full stack</span> developer</span>
+            <div class="social">
+                <a href=""><i class="fa fa-envelope"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+            </div>
+        </div>       
+    </section>
+
+    <section class="container-fluid flex middle" id="about">
+        <h1>
+            ABOUT ME
+        </h1>
+    </section>
+
+    <section class="container-fluid flex middle" id="projects">
+        <h1>
+            PROJECTS
+        </h1>
+    </section>
+
+    <section class="container-fluid flex middle" id="contact">
+        <h1>
+            CONTACT ME
+        </h1>
+    </section>
+
+    <script src="lib/gsap/src/minified/TweenLite.min.js"></script>
+    <script src="lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

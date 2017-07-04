@@ -1,0 +1,38 @@
+.flex {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+
+    &.flex-row {
+        flex-flow: row;
+    }
+
+    &.flex-center-x {
+        justify-content: center;
+    }
+
+    &.flex-center-y {
+        align-items: center;
+    }
+
+    .flex-right {
+        margin-left: auto;
+    }
+
+    .flex-left {
+        justify-content: flex-start;
+    }
+
+    &.middle {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.full {
+        height: calc(100vh);
+
+        > *:first-child {
+            margin-top: 100px;
+        }
+    }
+}

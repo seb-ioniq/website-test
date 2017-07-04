@@ -1,0 +1,14 @@
+{
+  "name": "pixi",
+  "homepage": "https://github.com/GoodBoyDigital/pixi.js",
+  "version": "4.5.3",
+  "_release": "4.5.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.5.3",
+    "commit": "e8af64865609d3653a29b23b4ee472240738703e"
+  },
+  "_source": "https://github.com/GoodBoyDigital/pixi.js.git",
+  "_target": "4.5.3",
+  "_originalSource": "pixi"
+}
