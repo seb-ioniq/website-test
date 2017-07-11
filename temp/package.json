@@ -1,0 +1,29 @@
+{
+  "name": "tittley-io",
+  "version": "1.0.0",
+  "description": "Personal website rebuild",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p"
+  },
+  "author": "Sebastien Leclerc-Tittley",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/pixi.js": "^4.5.0",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.5.3",
+    "pixi.js": "^4.5.3"
+  }
+}
